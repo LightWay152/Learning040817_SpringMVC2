@@ -1,0 +1,26 @@
+﻿SpringMVC2 project
+
+1/ WebContent -> WEB-INF:
+(should be create views folder, configs at here for security)
+- lib: remmember copy all of libs to use spring framework and some others libs
+- spring-configs: create spring-config-mvc.xml file to configs view and controller
+- views: include all view (jsp file) of project
+
+2/ WebContent -> web.xml:
+- servlet tags: init configs spring mvc to project
+- filter tags: apply UTF-8 encoding to project
+
+3/ src -> eshop.entity: entity (getter/setter) of eshop project
+
+4/ src: eshop.cfg.xml file to mapping entity of eshop project
+
+5/ src -> nhatnghe.controller:
+- include controller to handling logic in project
+- ProductController.java: 
+  + demo display list of product
+  + edit url path: SpringMVC2/product/list.php to use demo
+- CustomerController.java: 
+  + demo insert/update/delete/reset function to manage customer
+  + edit url path: SpringMVC2/customer/index.php to use display list of customer demo
+  + at this form, need to click Edit on the right of customer's name to edit info
+
